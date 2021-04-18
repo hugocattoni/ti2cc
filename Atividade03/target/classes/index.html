@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CONTROLE DE FUNCIONÁRIOS</h1>
+    <img src="dbr - Copia.jpg" alt="Italian Trulli">
+    <section class="section--container_responsive">
+        <section class="section--mainrow_responsive first--section">
+            <h2 class="generaltext">Inserir Funcionário</h2>
+            <form class= "form--register" action="http://localhost:4567/funcionario" method="post" id="form-add">
+
+                <input class="input--register" type="text" name="codigo" value="" placeholder="Código  (Ex: 1; 2; 3...)">
+                <input class="input--register" type="text" name="salario" value="" placeholder="Salário  (Ex: 1000; 5000; 10000...)">
+                <input class="input--register" type="text" name="departamento" value="" placeholder="Departamento  (Ex: 1; 2; 3; 4...)" >
+                <input class="input--register" type="text" name="p_nome" value="" placeholder="Primeiro Nome  (Ex: João; Maria...)">
+                <input class="input--register" type="text" name="u_nome" value="" placeholder="Último Nome  (Ex: Silva; Pereira; Santos...)">
+                <input class="input--register" type="text" name="sexo" value="" placeholder="Sexo  (Ex: M; F)">
+                <input type="submit" value="Cadastrar" class="input_main_style_input--button">
+
+            </form>
+        </section>
+
+        <section class="section--container_responsive">
+            <section class="section--mainrow_responsive first--section">
+                <h2 class="generaltext">Atualizar Funcionário</h2>
+                <form class= "form--register" action="http://localhost:4567/funcionario/update/" method="get" id="form-add">
+                    <input class="input--register" type="text" name="codigo" value="" placeholder="Código  (Ex: 1; 2; 3...)">
+                    <input class="input--register" type="text" name="salario" value="" placeholder="Salário  (Ex: 1000; 5000; 10000...)">
+                    <input class="input--register" type="text" name="departamento" value="" placeholder="Departamento  (Ex: 1; 2; 3; 4...)">
+                    <input class="input--register" type="text" name="p_nome" value="" placeholder="Primeiro Nome  (Ex: João; Maria...)">
+                    <input class="input--register" type="text" name="u_nome" value="" placeholder="Último Nome  (Ex: Silva; Pereira; Santos...)">
+                    <input class="input--register" type="text" name="sexo" value="" placeholder="Sexo  (Ex: M; F)">
+                    <input type="submit" value="Atualizar" class="input_main_style_input--button">
+                </form>
+            </section>
+        </section>
+        
+        <section class="section--container_responsive">
+            <section class="section--row_responsive">
+                <h2 class="generaltext">Apagar Funcionário</h2>
+                <form class= "form--register" action="http://localhost:4567/funcionario/delete/" method="get" id="form-add">
+                    <input class="input--register" type="text" name="codigo" value="" placeholder="Código">
+                    <input type="submit" value="Remover" class="input_main_style_input--button">
+                </form>
+            </section>
+        </section>
+
+        
+        <section class="section--container_responsive">
+            <section class="section--mainrow_responsive first--section">
+                <h2 class="generaltext">Listar Funcionários</h2>
+                <form class= "form--register" action="http://localhost:4567/funcionarios" method="get" id="form-add">
+                    <input type="submit" value="Listar" class="input_main_style_input--button">
+                </form>
+            </section>
+        </section>
+
+    </section>
+    
+</body>
+</html>
